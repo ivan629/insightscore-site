@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — InsightScore</title>
+    <meta name="description" content="InsightScore Privacy Policy. We collect the minimum data needed to score LinkedIn posts. No ads, no trackers, no data sales.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fcfcfb;
+            --bg-hero: #f8faf8;
+            --bg-card: #ffffff;
+            --bg-card-hover: #fafff9;
+            --bg-sub: #f3f4f1;
+            --bg-trust: #ecfdf5;
+            --bg-warm: #fffbeb;
+            --fg: #111210;
+            --fg-2: #374134;
+            --fg-3: #687066;
+            --fg-4: #9ca498;
+            --fg-5: #c5cbc2;
+            --border: #e2e6df;
+            --border-strong: #cdd3ca;
+            --green: #16a34a;
+            --green-soft: #bbf7d0;
+            --green-bg: #f0fdf4;
+            --accent: #16a34a;
+            --accent-soft: rgba(22, 163, 74, .08);
+            --red-bg: #fef2f2;
+            --red: #dc2626;
+            --red-soft: #fecaca;
+            --amber: #d97706;
+            --amber-bg: #fffbeb;
+            --indigo: #4f46e5;
+            --indigo-bg: #eef2ff;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,.04);
+            --shadow-md: 0 2px 8px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+            --shadow-lg: 0 4px 24px rgba(0,0,0,.07), 0 2px 8px rgba(0,0,0,.04);
+            --r: 12px;
+            --r-sm: 8px;
+            --font: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+            --mono: 'IBM Plex Mono', 'SF Mono', 'Consolas', monospace;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0a0d0a;
+                --bg-hero: #0d110d;
+                --bg-card: #131713;
+                --bg-card-hover: #171c17;
+                --bg-sub: #171c17;
+                --bg-trust: rgba(22, 163, 74, .08);
+                --bg-warm: rgba(217, 119, 6, .08);
+                --fg: #edf0ed;
+                --fg-2: #c4ccc2;
+                --fg-3: #8a948a;
+                --fg-4: #5c665c;
+                --fg-5: #2e352e;
+                --border: #1e241e;
+                --border-strong: #2a322a;
+                --green: #4ade80;
+                --green-soft: rgba(74, 222, 128, .15);
+                --green-bg: rgba(22, 163, 74, .06);
+                --accent: #4ade80;
+                --accent-soft: rgba(74, 222, 128, .06);
+                --red-bg: rgba(220, 38, 38, .08);
+                --red: #f87171;
+                --red-soft: rgba(248, 113, 113, .15);
+                --amber: #fbbf24;
+                --amber-bg: rgba(217, 119, 6, .08);
+                --indigo: #818cf8;
+                --indigo-bg: rgba(79, 70, 229, .08);
+                --shadow-sm: 0 1px 2px rgba(0,0,0,.2);
+                --shadow-md: 0 2px 8px rgba(0,0,0,.25), 0 1px 2px rgba(0,0,0,.15);
+                --shadow-lg: 0 4px 24px rgba(0,0,0,.3), 0 2px 8px rgba(0,0,0,.2);
+            }
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+        body { font-family: var(--font); color: var(--fg); background: var(--bg); line-height: 1.7; overflow-x: hidden; }
+
+        /* ═══════════════════════════════════════════
+           NAVIGATION
+           ═══════════════════════════════════════════ */
+        .nav {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(252,252,251,.85);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border-bottom: 1px solid var(--border);
+        }
+        @media (prefers-color-scheme: dark) {
+            .nav { background: rgba(10,13,10,.82); }
+        }
+        .nav-inner {
+            max-width: 800px; margin: 0 auto; padding: 14px 28px;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--fg); }
+        .nav-mark {
+            width: 30px; height: 30px; border-radius: 8px;
+            background: var(--fg); color: var(--bg);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .nav-name { font-size: 15px; font-weight: 700; letter-spacing: -.03em; }
+        .nav-cta {
+            font-size: 12px; font-weight: 600; color: var(--bg);
+            background: var(--fg); padding: 7px 16px; border-radius: 20px;
+            text-decoration: none; transition: opacity .15s;
+        }
+        .nav-cta:hover { opacity: .85; text-decoration: none; }
+
+        /* ═══════════════════════════════════════════
+           HERO — THE TRUST MOMENT
+           ═══════════════════════════════════════════ */
+        .hero {
+            background: var(--bg-hero);
+            border-bottom: 1px solid var(--border);
+            padding: 64px 28px 56px;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 7px;
+            background: var(--bg-trust); border: 1px solid var(--green-soft);
+            color: var(--green); font-size: 12px; font-weight: 600;
+            padding: 6px 14px; border-radius: 20px; margin-bottom: 24px;
+            letter-spacing: .01em;
+        }
+        .hero-badge svg { flex-shrink: 0; }
+        .hero h1 {
+            font-family: var(--serif); font-size: clamp(36px, 5vw, 52px);
+            font-weight: 400; letter-spacing: -.03em; line-height: 1.15;
+            margin-bottom: 16px; color: var(--fg);
+        }
+        .hero-sub {
+            font-size: 16px; color: var(--fg-3); max-width: 520px;
+            margin: 0 auto 36px; line-height: 1.7; font-weight: 400;
+        }
+        .hero-date {
+            font-family: var(--mono); font-size: 11.5px; color: var(--fg-4);
+            letter-spacing: .02em;
+        }
+
+        /* ═══════════════════════════════════════════
+           TRUST PILLARS — 3 PROMISES
+           ═══════════════════════════════════════════ */
+        .pillars {
+            max-width: 800px; margin: -28px auto 0; padding: 0 28px;
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+            position: relative; z-index: 10;
+        }
+        @media (max-width: 640px) { .pillars { grid-template-columns: 1fr; gap: 10px; } }
+        .pillar {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--r); padding: 20px;
+            box-shadow: var(--shadow-md); text-align: center;
+            transition: transform .2s, box-shadow .2s;
+        }
+        .pillar:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+        .pillar-icon {
+            width: 40px; height: 40px; border-radius: 10px;
+            display: inline-flex; align-items: center; justify-content: center;
+            margin-bottom: 12px;
+        }
+        .pillar-icon.green  { background: var(--green-bg); color: var(--green); }
+        .pillar-icon.red    { background: var(--red-bg); color: var(--red); }
+        .pillar-icon.indigo { background: var(--indigo-bg); color: var(--indigo); }
+        .pillar h3 { font-size: 14px; font-weight: 700; margin-bottom: 5px; letter-spacing: -.01em; }
+        .pillar p { font-size: 12.5px; color: var(--fg-3); margin: 0; line-height: 1.55; }
+
+        /* ═══════════════════════════════════════════
+           CONTENT
+           ═══════════════════════════════════════════ */
+        .content { max-width: 800px; margin: 0 auto; padding: 56px 28px 80px; }
+
+        .section { margin-bottom: 52px; }
+        .section-label {
+            display: inline-flex; align-items: center; gap: 6px;
+            font-family: var(--mono); font-size: 11px; font-weight: 500;
+            color: var(--green); background: var(--accent-soft);
+            padding: 4px 10px; border-radius: 5px;
+            margin-bottom: 12px; letter-spacing: .03em;
+        }
+        h2 {
+            font-family: var(--serif); font-size: 28px; font-weight: 400;
+            letter-spacing: -.02em; line-height: 1.25; margin-bottom: 18px;
+        }
+        h3 { font-size: 16px; font-weight: 600; margin: 28px 0 10px; letter-spacing: -.01em; }
+        p { font-size: 15px; color: var(--fg-2); margin-bottom: 16px; line-height: 1.75; }
+        p:last-child { margin-bottom: 0; }
+
+        /* ── TLDR box ──────────────────────────── */
+        .tldr {
+            display: flex; gap: 12px; align-items: flex-start;
+            background: var(--bg-trust); border: 1px solid var(--green-soft);
+            border-radius: var(--r-sm); padding: 16px 18px; margin-bottom: 20px;
+        }
+        .tldr-icon { flex-shrink: 0; color: var(--green); margin-top: 1px; }
+        .tldr p { font-size: 13.5px; font-weight: 500; color: var(--fg); margin: 0; line-height: 1.6; }
+        .tldr strong { font-weight: 700; }
+
+        /* ── Never box ─────────────────────────── */
+        .never {
+            display: flex; gap: 12px; align-items: flex-start;
+            background: var(--red-bg); border: 1px solid var(--red-soft);
+            border-radius: var(--r-sm); padding: 16px 18px; margin-bottom: 20px;
+        }
+        .never-icon { flex-shrink: 0; color: var(--red); margin-top: 1px; }
+        .never p { font-size: 13.5px; font-weight: 500; color: var(--fg); margin: 0; line-height: 1.6; }
+
+        /* ── Data table ────────────────────────── */
+        .table-wrap {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow-sm);
+            margin: 20px 0;
+        }
+        .data-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+        .data-table th {
+            text-align: left; font-weight: 600; font-size: 10.5px;
+            text-transform: uppercase; letter-spacing: .08em;
+            color: var(--fg-4); padding: 12px 18px;
+            background: var(--bg-sub); border-bottom: 1px solid var(--border);
+        }
+        .data-table td {
+            padding: 14px 18px; border-bottom: 1px solid var(--border);
+            color: var(--fg-2); vertical-align: top; line-height: 1.6;
+        }
+        .data-table tr:last-child td { border-bottom: none; }
+        .data-table td strong { color: var(--fg); font-weight: 600; }
+        .data-table td small { display: block; color: var(--fg-4); font-size: 11.5px; margin-top: 2px; }
+        .data-table code {
+            font-family: var(--mono); font-size: 11.5px;
+            background: var(--accent-soft); color: var(--green);
+            padding: 2px 7px; border-radius: 4px;
+        }
+
+        /* ── Permissions grid ──────────────────── */
+        .perm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+        @media (max-width: 600px) { .perm-grid { grid-template-columns: 1fr; } }
+        .perm-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--r-sm); padding: 16px 18px;
+            box-shadow: var(--shadow-sm); transition: border-color .15s;
+        }
+        .perm-card:hover { border-color: var(--border-strong); }
+        .perm-code {
+            font-family: var(--mono); font-size: 12px; font-weight: 500;
+            color: var(--green); background: var(--accent-soft);
+            padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px;
+        }
+        .perm-card p { font-size: 12.5px; color: var(--fg-3); margin: 0; line-height: 1.5; }
+
+        /* ── Third-party cards ─────────────────── */
+        .tp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+        @media (max-width: 600px) { .tp-grid { grid-template-columns: 1fr; } }
+        .tp-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--r-sm); padding: 16px 18px; box-shadow: var(--shadow-sm);
+        }
+        .tp-card h4 { font-size: 13.5px; font-weight: 700; margin-bottom: 4px; color: var(--fg); }
+        .tp-card p { font-size: 12px; color: var(--fg-3); margin: 0; line-height: 1.55; }
+        .tp-chip {
+            display: inline-block; font-size: 10px; font-weight: 600;
+            padding: 2px 7px; border-radius: 4px; margin-top: 8px;
+            text-transform: uppercase; letter-spacing: .04em;
+        }
+        .chip-auth { background: var(--indigo-bg); color: var(--indigo); }
+        .chip-infra { background: var(--amber-bg); color: var(--amber); }
+        .chip-ai { background: var(--accent-soft); color: var(--green); }
+
+        /* ── Rights cards ──────────────────────── */
+        .rights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+        @media (max-width: 600px) { .rights-grid { grid-template-columns: 1fr; } }
+        .right-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--r-sm); padding: 16px 18px; box-shadow: var(--shadow-sm);
+            display: flex; gap: 12px; align-items: flex-start;
+        }
+        .right-icon {
+            width: 32px; height: 32px; border-radius: 8px;
+            background: var(--green-bg); color: var(--green);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .right-card h4 { font-size: 13px; font-weight: 700; margin-bottom: 3px; }
+        .right-card p { font-size: 12px; color: var(--fg-3); margin: 0; line-height: 1.5; }
+
+        /* ── Links ─────────────────────────────── */
+        a { color: var(--green); text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+
+        /* ── Contact CTA ───────────────────────── */
+        .contact-cta {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--r); padding: 32px; text-align: center;
+            box-shadow: var(--shadow-md); margin: 40px 0;
+        }
+        .contact-cta h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; margin-bottom: 8px; }
+        .contact-cta p { font-size: 14px; color: var(--fg-3); margin-bottom: 20px; }
+        .contact-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--fg); color: var(--bg);
+            font-family: var(--font); font-size: 13px; font-weight: 600;
+            padding: 10px 22px; border-radius: 8px; border: none; cursor: pointer;
+            text-decoration: none; transition: opacity .15s;
+        }
+        .contact-btn:hover { opacity: .85; text-decoration: none; color: var(--bg); }
+
+        /* ═══════════════════════════════════════════
+           FOOTER
+           ═══════════════════════════════════════════ */
+        .footer { border-top: 1px solid var(--border); padding: 28px 0; }
+        .footer-inner {
+            max-width: 800px; margin: 0 auto; padding: 0 28px;
+            display: flex; align-items: center; justify-content: space-between;
+            flex-wrap: wrap; gap: 12px;
+        }
+        .footer-left { display: flex; align-items: center; gap: 12px; }
+        .footer-mark {
+            width: 22px; height: 22px; border-radius: 5px; background: var(--fg-5);
+            display: flex; align-items: center; justify-content: center;
+        }
+        .footer-copy { font-size: 12px; color: var(--fg-4); }
+        .footer-links { display: flex; gap: 16px; }
+        .footer-links a { font-size: 12px; color: var(--fg-3); font-weight: 500; }
+
+        /* ═══════════════════════════════════════════
+           ANIMATIONS
+           ═══════════════════════════════════════════ */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(14px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .hero-badge   { animation: fadeUp .5s ease-out both; }
+        .hero h1      { animation: fadeUp .5s ease-out .06s both; }
+        .hero-sub     { animation: fadeUp .5s ease-out .12s both; }
+        .hero-date    { animation: fadeUp .5s ease-out .18s both; }
+        .pillar:nth-child(1) { animation: fadeUp .45s ease-out .22s both; }
+        .pillar:nth-child(2) { animation: fadeUp .45s ease-out .28s both; }
+        .pillar:nth-child(3) { animation: fadeUp .45s ease-out .34s both; }
+
+        .section { opacity: 0; transform: translateY(20px); transition: opacity .5s ease-out, transform .5s ease-out; }
+        .section.visible { opacity: 1; transform: translateY(0); }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0s !important; transition-duration: 0s !important; }
+            .section { opacity: 1; transform: none; }
+        }
+
+        @media (max-width: 600px) {
+            .hero { padding: 48px 20px 44px; }
+            .content { padding: 44px 20px 60px; }
+            .nav-inner { padding: 12px 20px; }
+            .pillars { padding: 0 20px; margin-top: -20px; }
+            h2 { font-size: 24px; }
+            .contact-cta { padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══════════════════════════════════ -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="#" class="nav-brand">
+            <div class="nav-mark" aria-hidden="true">
+                <svg viewBox="0 0 14 14" fill="none" width="15" height="15"><path d="M2.5 11V6.5M7 11V3M11.5 11V7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <span class="nav-name">InsightScore</span>
+        </a>
+        <a href="https://chromewebstore.google.com" class="nav-cta">Install Extension</a>
+    </div>
+</nav>
+
+<!-- ═══ HERO ══════════════════════════════════ -->
+<header class="hero">
+    <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Your privacy is protected
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="hero-sub">
+        We built InsightScore to save your time — not to harvest your data.
+        This page explains exactly what we collect, why, and what we'll never do.
+        Written in plain English.
+    </p>
+    <span class="hero-date">Effective March 8, 2026 &nbsp;&middot;&nbsp; Version 1.0</span>
+</header>
+
+<!-- ═══ TRUST PILLARS ═════════════════════════ -->
+<div class="pillars">
+    <div class="pillar">
+        <div class="pillar-icon green">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>No data selling</h3>
+        <p>We will never sell, rent, or trade your data. Not now, not ever. Zero ad networks.</p>
+    </div>
+    <div class="pillar">
+        <div class="pillar-icon red">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+        </div>
+        <h3>No tracking</h3>
+        <p>No analytics cookies, no pixel trackers, no browser fingerprinting. None of it.</p>
+    </div>
+    <div class="pillar">
+        <div class="pillar-icon indigo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Encrypted &amp; isolated</h3>
+        <p>All data encrypted in transit and at rest. Your posts are visible only to you.</p>
+    </div>
+</div>
+
+<!-- ═══ CONTENT ═══════════════════════════════ -->
+<main class="content">
+
+    <div class="section" id="s1">
+        <span class="section-label">01 &middot; Overview</span>
+        <h2>What InsightScore does</h2>
+        <div class="tldr">
+            <span class="tldr-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <p><strong>Plain English:</strong> We read LinkedIn posts on your screen, ask AI to score them, and show you the result. That's it.</p>
+        </div>
+        <p>
+            InsightScore is a Chrome extension that evaluates the quality of LinkedIn posts using AI.
+            When you scroll through your LinkedIn feed, the extension reads the visible text of each post,
+            sends it to our scoring service, and displays a quality badge (1&ndash;10) alongside the post.
+            You can hover over any badge to see a one-sentence verdict of what the post says and whether it's backed up.
+        </p>
+        <p>
+            The extension only activates on linkedin.com. It does not run on any other website, does not read
+            your private messages, and does not access pages outside of LinkedIn.
+        </p>
+    </div>
+
+    <div class="section" id="s2">
+        <span class="section-label">02 &middot; Data Collection</span>
+        <h2>What we collect &amp; why</h2>
+        <div class="tldr">
+            <span class="tldr-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <p><strong>Plain English:</strong> Your Google name/email for login, the text of LinkedIn posts for scoring, and basic usage counts to enforce limits. Nothing else.</p>
+        </div>
+
+        <div class="table-wrap">
+            <table class="data-table">
+                <thead>
+                <tr>
+                    <th style="width:30%">Data</th>
+                    <th style="width:40%">Why we need it</th>
+                    <th style="width:30%">Where it lives</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>Google account info</strong><small>Email, display name, profile photo</small></td>
+                    <td>To create your account and authenticate API requests</td>
+                    <td>Supabase (encrypted at rest)</td>
+                </tr>
+                <tr>
+                    <td><strong>LinkedIn post content</strong><small>Post text, title, author, URL, word count</small></td>
+                    <td>Sent to AI for quality scoring, then stored so we don't re-score the same post</td>
+                    <td>Supabase (your account only)</td>
+                </tr>
+                <tr>
+                    <td><strong>AI-generated scores</strong><small>Signal score (1&ndash;10), verdict, quality tags</small></td>
+                    <td>Shown to you in the badge and popup dashboard</td>
+                    <td>Supabase + your browser cache</td>
+                </tr>
+                <tr>
+                    <td><strong>Usage counters</strong><small>Daily/monthly request counts</small></td>
+                    <td>To enforce free-tier and plan quotas</td>
+                    <td>Supabase</td>
+                </tr>
+                <tr>
+                    <td><strong>Install ID</strong><small>Random anonymous UUID</small></td>
+                    <td>Rate limiting and abuse prevention</td>
+                    <td>Your browser only</td>
+                </tr>
+                <tr>
+                    <td><strong>Settings</strong><small>Enabled/disabled preference</small></td>
+                    <td>Remembering your preferences</td>
+                    <td>Your browser only</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section" id="s3">
+        <span class="section-label">03 &middot; What We Don't Touch</span>
+        <h2>Data we never collect</h2>
+        <div class="never">
+            <span class="never-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></span>
+            <p>
+                We <strong>never</strong> collect your browsing history, LinkedIn login credentials, private messages,
+                connection/contact lists, demographic data, financial information, location data,
+                or any content from websites other than linkedin.com.
+            </p>
+        </div>
+        <p>
+            We don't use analytics pixels, advertising SDKs, cross-site trackers, or any form of
+            browser fingerprinting. No hidden data collection happens in the background.
+        </p>
+    </div>
+
+    <div class="section" id="s4">
+        <span class="section-label">04 &middot; Processing</span>
+        <h2>How your data flows</h2>
+        <div class="tldr">
+            <span class="tldr-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <p><strong>Plain English:</strong> Post text goes to our server &rarr; AI scores it &rarr; score comes back to your browser. Nothing is kept on the server after the response.</p>
+        </div>
+
+        <h3>Authentication</h3>
+        <p>
+            InsightScore uses Google OAuth to sign you in. We receive an identity token from Google &mdash;
+            we never see or store your Google password. This token is exchanged with our authentication
+            provider (Supabase) to create a secure session.
+        </p>
+
+        <h3>Post scoring</h3>
+        <p>
+            When a LinkedIn post appears on your screen, the extension extracts its visible text and
+            sends it to our secure proxy server (hosted on Cloudflare Workers). The proxy forwards
+            the content to an AI model for evaluation. The AI returns a quality score and short verdict.
+            Post content is not retained on the proxy server after the response is returned.
+        </p>
+
+        <h3>Storage</h3>
+        <p>
+            Scored posts are stored in your personal account in our database so you can review your
+            history in the extension popup. Each record is tied to your user ID and is never visible
+            to other users. Row-level security ensures you can only query your own data.
+        </p>
+
+        <h3>Local caching</h3>
+        <p>
+            Score results are cached locally in your browser (IndexedDB) to avoid redundant API calls
+            when you see the same post again. This cache lives entirely on your device and automatically
+            expires after 7 days.
+        </p>
+    </div>
+
+    <div class="section" id="s5">
+        <span class="section-label">05 &middot; Third Parties</span>
+        <h2>Services we use</h2>
+        <p>InsightScore relies on these infrastructure partners to operate. We do not use any advertising networks, analytics services, or data brokers.</p>
+
+        <div class="tp-grid">
+            <div class="tp-card">
+                <h4>Google OAuth</h4>
+                <p>Handles the sign-in flow. We receive your name and email &mdash; never your Google password.</p>
+                <span class="tp-chip chip-auth">Authentication</span>
+            </div>
+            <div class="tp-card">
+                <h4>Supabase</h4>
+                <p>Our database and auth provider. Stores your account, scored posts, and usage data. Encrypted at rest and in transit.</p>
+                <span class="tp-chip chip-infra">Infrastructure</span>
+            </div>
+            <div class="tp-card">
+                <h4>Cloudflare Workers</h4>
+                <p>Hosts the scoring proxy. Relays post content to the AI model. Does not persistently store any content.</p>
+                <span class="tp-chip chip-infra">Infrastructure</span>
+            </div>
+            <div class="tp-card">
+                <h4>Cerebras AI</h4>
+                <p>Provides the language model for scoring. Post text is sent for inference only and processed per their privacy policy.</p>
+                <span class="tp-chip chip-ai">AI Scoring</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="s6">
+        <span class="section-label">06 &middot; Data Sharing</span>
+        <h2>We don't sell your data. Period.</h2>
+        <div class="tldr">
+            <span class="tldr-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <p><strong>Plain English:</strong> Your data is shared only with the infrastructure services above to make the product work. No marketing, no ads, no brokers, no exceptions.</p>
+        </div>
+        <p>
+            We do not sell, rent, trade, license, or share your personal data with any third parties
+            for marketing, advertising, profiling, or any purpose unrelated to providing the InsightScore
+            service. We may disclose data only if required by law, a court order, or to protect against
+            fraud or abuse of the service.
+        </p>
+    </div>
+
+    <div class="section" id="s7">
+        <span class="section-label">07 &middot; Retention</span>
+        <h2>How long we keep data</h2>
+        <div class="table-wrap">
+            <table class="data-table">
+                <thead><tr><th>Data</th><th>Retention</th></tr></thead>
+                <tbody>
+                <tr><td><strong>Scored posts &amp; history</strong></td><td>Kept as long as your account is active, so you can access your dashboard</td></tr>
+                <tr><td><strong>Local browser cache</strong></td><td>Auto-expires after 7 days</td></tr>
+                <tr><td><strong>Account data</strong></td><td>Deleted within 30 days of a deletion request</td></tr>
+                <tr><td><strong>AI inference data</strong></td><td>Not retained after the scoring response is returned</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section" id="s8">
+        <span class="section-label">08 &middot; Your Rights</span>
+        <h2>You're in control</h2>
+
+        <div class="rights-grid">
+            <div class="right-card">
+                <div class="right-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18.36 6.64A9 9 0 0 1 12 21a9 9 0 0 1 0-18c1.66 0 3.14.45 4.45 1.22"/><path d="m9 12 2 2 4-4"/></svg></div>
+                <div>
+                    <h4>Pause anytime</h4>
+                    <p>Toggle scoring off from the popup. Posts are saved but not sent to AI.</p>
+                </div>
+            </div>
+            <div class="right-card">
+                <div class="right-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></div>
+                <div>
+                    <h4>Sign out</h4>
+                    <p>Clears your local session immediately and stops all data collection.</p>
+                </div>
+            </div>
+            <div class="right-card">
+                <div class="right-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+                <div>
+                    <h4>Delete everything</h4>
+                    <p>Email us and we'll permanently delete your account and all data within 30 days.</p>
+                </div>
+            </div>
+            <div class="right-card">
+                <div class="right-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+                <div>
+                    <h4>Export your data</h4>
+                    <p>Request a full copy of everything we store about you. Just email us.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="s9">
+        <span class="section-label">09 &middot; Security</span>
+        <h2>How we protect your data</h2>
+        <p>
+            All communication between the extension, our proxy, and our database is encrypted with
+            HTTPS/TLS. Authentication tokens are stored in Chrome's secure extension storage and are
+            refreshed automatically on a 30-minute cycle. Our database uses row-level security policies
+            so that every query is scoped to the authenticated user &mdash; there is no way for one user to
+            access another user's data.
+        </p>
+    </div>
+
+    <div class="section" id="s10">
+        <span class="section-label">10 &middot; Permissions</span>
+        <h2>Chrome permissions explained</h2>
+        <p>We request only the permissions the extension needs to function. Here's exactly what each one does:</p>
+
+        <div class="perm-grid">
+            <div class="perm-card">
+                <span class="perm-code">storage</span>
+                <p>Saves your settings, login session, and score cache locally on your device.</p>
+            </div>
+            <div class="perm-card">
+                <span class="perm-code">activeTab</span>
+                <p>Reads the text of LinkedIn posts on the page you're currently viewing.</p>
+            </div>
+            <div class="perm-card">
+                <span class="perm-code">scripting</span>
+                <p>Injects the content scripts that display score badges on LinkedIn.</p>
+            </div>
+            <div class="perm-card">
+                <span class="perm-code">identity</span>
+                <p>Enables the Google sign-in flow so you can create an account.</p>
+            </div>
+            <div class="perm-card">
+                <span class="perm-code">alarms</span>
+                <p>Schedules background tasks like token refresh and cache cleanup.</p>
+            </div>
+            <div class="perm-card">
+                <span class="perm-code">host: linkedin.com</span>
+                <p>Allows content scripts to run on LinkedIn pages. No other sites are accessed.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="s11">
+        <span class="section-label">11 &middot; Children's Privacy</span>
+        <h2>Not designed for children</h2>
+        <p>
+            InsightScore is not directed at children under the age of 13. We do not knowingly collect
+            personal information from children. If you believe a child has provided us with personal data,
+            please contact us and we will promptly delete it.
+        </p>
+    </div>
+
+    <div class="section" id="s12">
+        <span class="section-label">12 &middot; Changes</span>
+        <h2>Policy updates</h2>
+        <p>
+            If we make material changes to this policy, we will update the effective date at the top
+            of this page and, where possible, notify you through the extension. Continued use of
+            InsightScore after any changes constitutes acceptance of the updated policy.
+        </p>
+    </div>
+
+    <div class="section" id="s13">
+        <span class="section-label">13 &middot; Contact</span>
+        <h2>Questions?</h2>
+        <div class="contact-cta">
+            <h3>We're happy to help</h3>
+            <p>Whether it's a question about your data, a deletion request, or general feedback &mdash; we respond within 48 hours.</p>
+            <a href="mailto:privacy@insightscore.app" class="contact-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                privacy@insightscore.app
+            </a>
+        </div>
+    </div>
+
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════ -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-left">
+            <div class="footer-mark" aria-hidden="true">
+                <svg viewBox="0 0 14 14" fill="none" width="12" height="12"><path d="M2.5 11V6.5M7 11V3M11.5 11V7.5" stroke="#9ca498" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <span class="footer-copy">&copy; 2026 InsightScore. All rights reserved.</span>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="mailto:privacy@insightscore.app">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        var sections = document.querySelectorAll('.section');
+        if (!('IntersectionObserver' in window)) {
+            sections.forEach(function(s) { s.classList.add('visible'); });
+            return;
+        }
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
+        sections.forEach(function(s) { observer.observe(s); });
+    })();
+</script>
+
+</body>
+</html>
